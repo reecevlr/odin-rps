@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="game.js"></script>
+        <title>Rock, Paper, Scissors!</title>
+    </head>
+    <body>
+        <div class="main">
+            <button id="rock" value="rock">Rock</button>
+            <button id="paper" value="paper">Paper</button>
+            <button id="scissors" value="scissors">Scissors</button>
+        </div>
+
+        <div class="result">
+            <table>
+                <tr>
+                    <th>Player Score</th>
+                    <th>Computer Score</th>
+                </tr>
+                <tr>
+                    <td id="playerScore" class="score">0</td>
+                    <td id="compScore" class="score">0</td>
+                </tr>
+            </table>
+            <p class="announcer"></p>
+        </div>
+
+        <div class="popup" id="popup-winner">
+            <h3 id="popup-header"></h3>
+        </div>
+    </body>
+</html>

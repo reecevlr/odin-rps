@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(2,0,36,1) 11%, rgba(121,9,109,1) 37%, rgba(0,212,255,1) 100%); 
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.main {
+    display: flex;
+    gap: 5px;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main button {
+    font-size: 16px;
+    padding: 6px;
+    min-height: 35px;
+    min-width: 125px;
+    background-color: #00d4ff;
+    border: 0;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.main button:hover {
+    background-color: #413E7E;
+    color: #ffffff;
+}
+
+.result {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result table {
+    color: #ffffff;
+}
+
+.result table th {
+    font-size: 25px;
+    padding: 25px;
+}
+
+.result table .score {
+    text-align: center;
+    font-size: 16px;
+}
+
+.result .announcer {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.popup {
+    position: fixed;
+    width: 30vw;
+    left: 0;
+    right: 0;
+    top: 35vh;
+    margin: auto;
+
+    display: none;
+    padding: 65px;
+    z-index: 1;
+
+    background-color: rgba(31, 41, 55, .90);
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .5);
+    color: #ffffff;
+    text-align: center;
+}
+
+.popup #popup-header {
+    font-size: 35px;
+}
+
+/*
+    References
+        https://stackoverflow.com/questions/40549227/how-to-create-a-pop-up-animation-with-a-modal-using-css
+*/
