@@ -6,11 +6,11 @@ Link: https://reecevlr.github.io/odin-rps/
 
 ## To Dos
 - [ ] HTML
-  - [ ] Revamp body css properties
+  - [x] Revamp body css properties
   - [x] Edit heading
-  - [ ] Use images instead of text (rps)
+  - [x] Use images instead of text (rps)
 - [ ] CSS 
   - [ ] Add effects for winner
   - [ ] Add transition for scoreboard
-  - [ ] Edit footer
+  - [x] Edit footer
 - [ ] Show computers' choice per round
