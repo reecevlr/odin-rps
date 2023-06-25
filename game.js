@@ -23,12 +23,11 @@ buttons.forEach(btn => {
 
 // Functions
 function handleClick(e) {
-    playerSelection = e.target.textContent.toLowerCase();
+    playerSelection = e.target.value;
 }
 
 function getComputerSelection() {
     let computerSelection = Math.floor(Math.random() * 3);
-    // console.log(computerSelection);
 
     switch (computerSelection) {
         case 0:
@@ -42,9 +41,6 @@ function getComputerSelection() {
 
 function playRound() {
     let computerSelection = getComputerSelection();
-
-    console.log(playerSelection);
-    console.log(computerSelection);
 
     if (playerSelection === computerSelection) {
         return game('draw');
@@ -95,15 +91,13 @@ function game(roundWinner) {
     if (roundWinner === 'player') {
         playerScore.textContent = playerWins;
         announcer.textContent = 'Humanity takes a stand... +1';
-        // console.log(`Player wins! With a total of ${playerWins} points!`);
     }
     else if (roundWinner === 'computer') {
         compScore.textContent = computerWins;
         announcer.textContent = 'The Machine strikes back... +1';
-        // console.log(`Computer wins! With a total of ${computerWins} points!`);
     }
     else {
-        announcer.textContent = 'A power draw! +0';
+        announcer.textContent = 'A power draw! No points';
     }
 }
 
